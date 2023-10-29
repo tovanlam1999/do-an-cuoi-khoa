@@ -1,4 +1,4 @@
-import img from '../../img/Logo-img.png';
+import img from '../../img/logo_.jpg';
 import { Nav, Navbar, NavItem, NavLink, Collapse, NavbarText, NavbarBrand, NavbarToggler } from 'reactstrap';
 import './Header.css';
 
@@ -31,6 +31,7 @@ export default function Header(args) {
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </Nav>
+
                     </Collapse>
                     <NavbarText className="header_right navbar">
                         <div>
@@ -47,8 +48,18 @@ export default function Header(args) {
                             <span className="qualiti">0</span>
                             <span className="header_right-text">Giỏ Hàng</span>
                         </div>
-                        <div className="header_navbar-menu" color="danger" onClick={toggle}></div>
                     </NavbarText>
+                    <div className='max-width-390'>
+                        <div className="sreach-767px">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div className="sreach-767px">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <button className="header_navbar-menu" color="danger" onClick={toggle}>
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
                 </Navbar>
                 <Modal isOpen={modal} toggle={toggle} {...args}>
                     <ModalHeader toggle={toggle}>

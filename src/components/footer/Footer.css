@@ -1,3 +1,10 @@
+:root {
+    --color-priemry: #a0b200;
+    --color-btn: #f56c28;
+    --colo-hover: ;
+}
+
+
 .footer {
     background-image: url(../../img/footer.jpg);
     height: 500px;
@@ -8,7 +15,7 @@
     background-position: top right;
 }
 .footer::after {
-    background-color: #00000017;
+    background-color: #00000009;
     content: "";
     position: absolute;
     width: 100%;
@@ -17,35 +24,104 @@
     left: 0;
 }
 .Content {
-    width: 85%;
+    width: 65%;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 2;
     font-family: Montserrat, sans-serif;
 }
 
-.Content-item h3 {
+.Content_item h3 {
     font-size: 22px;
     color: #000;
     font-weight:600;
 }
-.Content-item ul {
+.Content_item ul {
     margin: 20px 0; 
     cursor: pointer;  
 }
-.Content-item ul li {
+.Content_item ul li {
     margin: 20px 0;
     transition: 0.5s;
     font-size: 14px;
 }
-.Content-item ul li:hover {
-    color:#a0b200 ;
+.Content_item ul li:hover {
+    color:var(--color-priemry) ;
 }
-.Content-item ul li i {
+.Content_item ul li i {
     margin-right: 10px;
 }
-.meo{
-    color:#fff;
+.Content_item-email {
+    position: relative;
+    color: #fff;
+}
+.Content_item-email input {
+    padding: 12px 15px;
+    width: 100%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+}
+.Content_item-email button {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+.Content_item-email button:hover {
+    color: var(--color-priemry);
+}
+::placeholder {
+    color: #fff;
+}
+
+h3 {
+    font-family: 'Chewy', cursive;
+}
+.Content_item h3 {
+    margin: 20px 0;
+    line-height: 30px;
+}
+.Content_item-social {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Content_item-social i {
+    transition: 0.5s;
+
+}
+.Content_item-social i:hover {
+    color: var(--color-priemry);
+}
+
+@media (max-width:991px) {
+    .Content {
+        position: unset;
+        transform: none;
+        width: 70%;
+        margin:  0 auto;
+    }
+    .add-width {
+        width: 50%;
+        flex: 0 0 auto
+    }
+    .footer::after {
+        z-index: -1;
+    }
+    .footer {
+        height: 100%;
+    }
 }

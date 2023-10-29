@@ -1,5 +1,12 @@
+:root {
+    --color-priemry: #a0b200;
+    --color-btn: #f56c28;
+    --colo-hover: ;
+}
+
+
 .wrap {
-    background-color: #f8c592;
+    border-top: 1px solid #ccc;
 }
 
 ul {
@@ -74,7 +81,7 @@ ul {
     
 }
 .navbar_list li:hover {
-
+    color: #a0b200;
 }
 
 
