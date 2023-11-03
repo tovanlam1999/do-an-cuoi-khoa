@@ -6,6 +6,7 @@
 
 
 .wrap {
+    margin-top: 20px;
     border-top: 1px solid #ccc;
 }
 
@@ -57,7 +58,7 @@ ul {
     position: absolute;
     width: 0;
     height: 5px;
-    background-color:#a0b200;
+    background-color:var(--color-btn);
     top: 0px;
     left: 0;
     transition: 0.5s;
@@ -67,7 +68,7 @@ ul {
     position: absolute;
     width: 0;
     height: 5px;
-    background-color:#a0b200 ;
+    background-color:var(--color-btn) ;
     bottom: 0;
     right:  0;
     transition: 0.5s;
@@ -81,7 +82,7 @@ ul {
     
 }
 .navbar_list li:hover {
-    color: #a0b200;
+    color: var(--color-btn);
 }
 
 

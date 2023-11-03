@@ -1,8 +1,9 @@
 import Header from "../../components/header/Header";
 import Banner from "../../components/banner/Banner";
-import BannerBox from "../../components/bannerbox/BannerBox";
 import Navbar from "../../components/navbar/Navbar";
+import Category from "../../components/category/Category";
 import Footer from "../../components/footer/Footer";
+import NewProduct from "../../components/newproduct/NewProduct";
 
 ;
 
@@ -13,7 +14,8 @@ export default function Home () {
             <Header/>
             <Navbar/>
             <Banner/>
-            <BannerBox/>
+            <Category/>
+            <NewProduct/>
             <Footer/>
         </div>
     )
