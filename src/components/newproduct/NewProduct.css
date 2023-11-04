@@ -4,16 +4,29 @@
     margin-top: 50px;
 }
 
+
+
+
+    h2 {
+    font-size: 60px;
+    margin: 0 auto 50px;
+    color: var(--color-btn);
+}
+
 .NewProduct_top {
     width: 20%;
     margin: 0 auto;
 }
 
-.NewProduct_top img {}
+.NewProduct_img {
+    width: 20%;
+    margin: 0 auto;
+}
 
 .NewProduct_bottom {
     position: relative;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .NewProduct_row {
@@ -60,4 +73,24 @@
     transform: translate(-50%) translateY(-50%) rotate(-25deg);
     transition: 1s;
     z-index: -1;
+}
+
+
+@keyframes title {
+    0% {
+        border-left: 3px solid var(--color-priemry);
+    }
+
+    20% {
+        border-bottom: 3px solid var(--color-btn);
+    }
+
+    40% {
+        border-right: 3px solid var(--color-priemry);
+    }
+
+    60% {
+        border-top: 3px solid var(--color-btn);
+    }
+
 }

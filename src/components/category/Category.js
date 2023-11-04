@@ -2,14 +2,15 @@ import { Col, Container, Row } from 'reactstrap';
 import Categorycat from '../../img/meo-anh-3.jpg';
 import Categorydog from '../../img/cho-dom-img.jpg';
 import Categoryvet from '../../img/vet-img.jpg';
-
+import lineimg from '../../img/Line-heading.png';
 import './Category.css';
 
 export default function Category() {
     return (
         <div className="Category">
             <div className="Category_wrap">
-                <h3>Categories</h3>
+                <h2>Danh Mục Thú Cưng</h2>
+                
                 <Row>
                     <Col className="Category_item">
                         <img src={Categorydog} />

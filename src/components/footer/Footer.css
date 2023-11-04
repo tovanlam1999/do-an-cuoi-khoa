@@ -1,9 +1,7 @@
-:root {
-    --color-priemry: #a0b200;
-    --color-btn: #f56c28;
-    --colo-hover: ;
-}
 
+h3,h2 {
+    font-family: 'Chewy', cursive;
+}
 
 .footer {
     background-image: url(../../img/footer.jpg);
@@ -84,9 +82,7 @@
     color: #fff;
 }
 
-h3 {
-    font-family: 'Chewy', cursive;
-}
+
 .Content_item h3 {
     margin: 20px 0;
     line-height: 30px;

@@ -3,7 +3,7 @@ import axios from 'axios';
 import Product from '../product/Product';
 import { Row, Col, Container } from 'reactstrap';
 import './NewProduct.css';
-import lineimg from '../../img/Line-heading.png';
+
 export default function NewProduct(props) {
     const [data, setData] = useState([]);
 
@@ -25,10 +25,7 @@ export default function NewProduct(props) {
     console.log(data);
     return (
         <div className="NewProduct">
-            <div className="NewProduct_top">
-                <h2>Thức Ăn Cho Chó</h2>
-                <img src={lineimg} />
-            </div>
+            <h2>Danh Mục Thức ăn </h2>
             <div className="NewProduct_bottom">
                 <div className="prev">
                     <div className="prev-left">

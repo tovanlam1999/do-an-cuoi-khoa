@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Category from "../../components/category/Category";
 import Footer from "../../components/footer/Footer";
 import NewProduct from "../../components/newproduct/NewProduct";
+import Sale from "../../components/sale/Sale";
 
 ;
 
@@ -16,6 +17,7 @@ export default function Home () {
             <Banner/>
             <Category/>
             <NewProduct/>
+            <Sale/>
             <Footer/>
         </div>
     )
