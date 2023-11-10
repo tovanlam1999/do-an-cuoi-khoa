@@ -22,12 +22,18 @@ export default function NewProduct(props) {
     useEffect(() => {
         getData();
     }, []);
-    console.log(data);
+
     return (
         <div className="NewProduct">
-            <h2>Danh Mục Thức ăn </h2>
+            <div className="border-animation active">
+                <h2>Danh Mục Thức ăn </h2>
+                <span className="border-top"></span>
+                <span className="border-right"></span>
+                <span className="border-bottom"></span>
+                <span className="border-left"></span>
+            </div>
             <div className="NewProduct_bottom">
-                <div className="prev">
+                <div className="prev-green">
                     <div className="prev-left">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>

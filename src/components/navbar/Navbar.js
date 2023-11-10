@@ -1,9 +1,10 @@
+import { Container } from 'reactstrap';
 import './Navbar.css';
 
 export default function Navbar() {
     return (
         <div className="wrap">
-            <div className="navbar_main">
+            <Container className="navbar_main">
                 {/* <div className="navbar_drpodowm">
                     <i class="fa-solid fa-bars"></i>
                     Danh Mục Sản Phẩm
@@ -33,7 +34,7 @@ export default function Navbar() {
                         <a>Liên Hệ</a>
                     </li>
                 </ul>
-            </div>
+            </Container>
         </div>
     );
 }

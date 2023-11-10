@@ -46,7 +46,7 @@ h3,h2 {
     font-size: 14px;
 }
 .Content_item ul li:hover {
-    color:var(--color-priemry) ;
+    color:var(--color-primery) ;
 }
 .Content_item ul li i {
     margin-right: 10px;
@@ -76,7 +76,7 @@ h3,h2 {
     transition: 0.5s;
 }
 .Content_item-email button:hover {
-    color: var(--color-priemry);
+    color: var(--color-primery);
 }
 ::placeholder {
     color: #fff;
@@ -100,7 +100,7 @@ h3,h2 {
 
 }
 .Content_item-social i:hover {
-    color: var(--color-priemry);
+    color: var(--color-primery);
 }
 
 @media (max-width:991px) {

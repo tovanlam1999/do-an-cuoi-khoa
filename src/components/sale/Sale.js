@@ -6,7 +6,7 @@ export default function Sale() {
     return (
         <div className="Sale_wrap">
             <Row className="Sale">
-                <Col className=" col-4">
+                <Col className=" col-6 Sale_left">
                     <h2>Ưu đãi hôm nay</h2>
                     <div className="Sale_content">
                         <h3>Que nhai mềm</h3>

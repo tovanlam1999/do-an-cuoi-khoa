@@ -9,9 +9,15 @@ export default function Category() {
     return (
         <div className="Category">
             <div className="Category_wrap">
-                <h2>Danh Mục Thú Cưng</h2>
-                
-                <Row>
+                <div className="border-animation active">
+                    <h2>Danh Mục Thú Cưng </h2>
+                    <span className="border-top"></span>
+                    <span className="border-right"></span>
+                    <span className="border-bottom"></span>
+                    <span className="border-left"></span>
+                </div>
+
+                <Row className='Category_row' >
                     <Col className="Category_item">
                         <img src={Categorydog} />
                         <div className="Category_content">

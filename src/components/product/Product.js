@@ -3,7 +3,6 @@ import "./Product.css"
 
 export default function Product(props) {
     const { index, product } = props;
-    console.log(product.img);
     return (
         <div className="Products">
             <a className="thumb">
@@ -29,7 +28,6 @@ export default function Product(props) {
                     <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-
         </div>
     );
 }

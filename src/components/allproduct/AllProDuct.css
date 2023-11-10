@@ -1,41 +1,30 @@
-.NewProduct {
+.AllProDuct {
     text-align: center;
-    overflow: hidden;
-    margin-top: 50px;
-}
-
-.NewProduct > .border-animation {
-    width: 40%;
-}
-
-
-h2 {
-    font-size: 60px;
-    margin: 0 auto ;
-    color: var(--color-btn);
-    padding: 10px;
-}
-
-
-.NewProduct_top {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.NewProduct_img {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.NewProduct_bottom {
-    position: relative;
     cursor: pointer;
-    margin-top: 50px;
+    margin: 50px 0;
+    position: relative;
 }
 
-.NewProduct_row {
+.AllProDuct_hedding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+    margin: 0 auto;
+}
+.AllProDuct_hedding h2 {
+    font-size: 30px;
+    color: #aaa;
+}
+
+.AllProDuct_border-animation > .active{
+    color: var(--color-btn);
+}
+
+.AllProDuct_row {
     flex-wrap: unset;
     overflow: hidden;
+    margin-top: 50px;
 }
 
 .prev-green {
@@ -65,18 +54,15 @@ h2 {
 
 .prev-green div:hover::after {
     height: 250%;
-
+    
 }
-
 .prev-green div:hover i {
     color: #fff;
     z-index: 3;
 }
-
 .prev-green div i {
     transition: 0.5s;
 }
-
 .prev-green div::after {
     content: "";
     position: absolute;
@@ -91,15 +77,14 @@ h2 {
 }
 
 
-
-.border-animation {
+.AllProDuct_border-animation.active {
     position: relative;
-    width: 50%;
-    margin: 0 auto;
+    width: 30%;
     overflow: hidden;
 }
 
-.border-top {
+
+.AllProDuct_border-top.active {
     position: absolute;
     top: 0;
     right:0 ;
@@ -109,7 +94,7 @@ h2 {
     animation: animate-boder-top 2s linear infinite;
 }
 
-.border-right {
+.AllProDuct_border-right.active {
     position: absolute;
     top: 0;
     right:0 ;
@@ -121,7 +106,7 @@ h2 {
 
 }
 
-.border-bottom {
+.AllProDuct_border-bottom.active {
     position: absolute;
     bottom: 0;
     right:0 ;
@@ -131,7 +116,7 @@ h2 {
     animation: animate-boder-bottom 2s  linear infinite;
 }
 
-.border-left {
+.AllProDuct_border-left.active {
     position: absolute;
     top: 0;
     left: 0 ;
@@ -140,37 +125,4 @@ h2 {
     background: linear-gradient(to top , #f17338,#fcc23f);
     animation: animate-boder-left 2s linear infinite;
     animation-delay: 1s;
-}
-
-@keyframes animate-boder-top {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-@keyframes animate-boder-right {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(100%);
-    }
-}
-@keyframes animate-boder-bottom {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-@keyframes animate-boder-left {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(-100%);
-    }
 }

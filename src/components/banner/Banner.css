@@ -20,39 +20,40 @@
 .banner-3,
 .banner-1 {
     position: relative;
-}
 
+}
+.banner-2::after,
+.banner-3::after,
+.banner-1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url(../../img/animation-img.jpg);
+    animation: moveright 300s linear infinite;
+}
+.banner-2::before,
+.banner-3::before,
+.banner-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url(../../img/animation-img.jpg);
+    transform: scaleY(-1);
+    animation: moveleft 300s linear infinite;
+
+}
 .banner-2 {
     display: none;
 }
 
 .banner-3 {
     display: none;
-}
-
-.banner-img-top,
-.banner-img-bottom {
-    position: absolute;
-    display: flex;
-}
-
-
-.banner-img-top {
-    top: -50px;
-    transform: scaleX(-1) scaleY(-1);
-}
-
-.banner-img-bottom {
-    bottom: -50px;
-}
-.banner-img-top img:nth-child(1),
-.banner-img-bottom img:nth-child(1) {
-    animation: left  20s   infinite linear ;
-    
-}
-.banner-img-top img:nth-child(2),
-.banner-img-bottom img:nth-child(2) {
-    animation: right  20s   infinite linear ;
 }
 
 .thumb-banner {
@@ -115,7 +116,7 @@
 .thumb-banner button::after {
     content: "";
     position: absolute;
-    background-color: var(--color-priemry);
+    background-color: var(--color-primery);
     width: 100%;
     height: 0;
     top: 50%;
@@ -185,7 +186,7 @@
 .prev div::after {
     content: "";
     position: absolute;
-    background-color: var(--color-priemry);
+    background-color: var(--color-primery);
     width: 150%;
     height: 0;
     top: 50%;
@@ -195,25 +196,22 @@
     z-index: -1;
 }
 
-@media (max-width:1330px) {
-    .thumb-banner {
-        width: 45%;
-        left: 40%;
-    }
+@media (max-width:1024px) {
+    
 }
 
-@media (max-width:991px) {
+@media (min-width:1024px) {
     .thumb-banner {
         width: 35%;
         left: 35%;
     }
 
     .thumb-banner h3 {
-        font-size: 16px;
+        font-size: 22px;
     }
 
     .thumb-banner h1 {
-        font-size: 34px;
+        font-size: 45px;
     }
 
     .thumb-banner button {
@@ -221,23 +219,25 @@
     }
 }
 
-@keyframes right {
+@keyframes moveleft {
     from {
-        transform: translateX(-200%);
+      background-position: 0 0;
     }
 
     to {
-        transform: translateX(-100%);
+       background-position:  -30000px 0;
+
 
     }
 }
-@keyframes left {
+@keyframes moveright {
     from {
-        transform: translateX(0%);
-
-    }
-
-    to {
-        transform: translateX(100%);
-    }
+        background-position: 0 0;
+      }
+  
+      to {
+        background-position:  30000px 0;
+  
+  
+      }
 }

@@ -31,35 +31,32 @@ export default function Header(args) {
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </Nav>
-
                     </Collapse>
                     <NavbarText className="header_right navbar">
-                        <div>
+                        <div className="sreach">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span className="header_right-text">Tìm Kiếm</span>
+                        </div>
+                        <div className='login'>
                             <i class="fa-solid fa-user"></i>
                             <span className="header_right-text">Đăng Nhập</span>
                         </div>
-                        <div>
+                        <div  className='withlove'>
                             <i class="fa-solid fa-heart"></i>
                             <span className="qualiti">0</span>
                             <span className="header_right-text">Yêu Thích</span>
                         </div>
-                        <div>
+                        <div className='shopping'>
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span className="qualiti">0</span>
                             <span className="header_right-text">Giỏ Hàng</span>
                         </div>
-                    </NavbarText>
-                    <div className='max-width-390'>
-                        <div className="sreach-767px">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <div className="sreach-767px">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <button className="header_navbar-menu" color="danger" onClick={toggle}>
+                        <div className="header_navbar-menu" color="danger" onClick={toggle}>
                             <i class="fa-solid fa-bars"></i>
-                        </button>
-                    </div>
+                            <span className="header_right-text">Menu</span>
+                        </div>
+                    </NavbarText>
+                    
                 </Navbar>
                 <Modal isOpen={modal} toggle={toggle} {...args}>
                     <ModalHeader toggle={toggle}>
