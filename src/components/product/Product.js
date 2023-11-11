@@ -28,6 +28,7 @@ export default function Product(props) {
                     <i class="fa-solid fa-star"></i>
                 </div>
             </div>
+           
         </div>
     );
 }

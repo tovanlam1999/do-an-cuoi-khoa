@@ -53,6 +53,12 @@ export default function Baner() {
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
+            <div className='swiper'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+        
     );
 }

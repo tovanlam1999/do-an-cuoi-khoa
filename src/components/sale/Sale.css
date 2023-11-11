@@ -10,50 +10,59 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     height: 100%;
     align-items: center;
     justify-content: space-between;
 }
-.Sale_left {
-}
+
+.Sale_left {}
+
 .Sale_content {
-   margin-top: 50px;
-   width: 100%;
+    margin-top: 50px;
+    width: 100%;
 }
+
 .Sale_content h3 {
     font-weight: 600;
     margin: 20px 0;
 }
+
 .Sale_content p {
     margin: 20px 0;
 }
+
 .Sale_img {
     width: 50%;
 }
-.review i {   
+
+.review i {
     margin-right: 5px;
     color: #f8a012;
 }
+
 .Sale_price {
     display: flex;
-    width: 35%;
+    width: 40%;
     justify-content: space-between;
     color: var(--color-btn);
     font-size: 22px;
     font-weight: 600;
     margin: 20px 0;
 }
+
 .Sale_price span {
-    color: #979797 ;
+    color: #979797;
     text-decoration: line-through;
     font-weight: 400;
 }
+
 .Sale_button {
     margin-top: 30px;
 }
-.Sale_button  button{
+
+.Sale_button button {
     display: inline-block;
     width: 35%;
     padding: 14px 12px;
@@ -64,11 +73,13 @@
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    z-index:3 ;
+    z-index: 3;
 }
-.Sale_button  button i {
+
+.Sale_button button i {
     margin-right: 10px;
 }
+
 .Sale_button button {
     background-color: var(--color-btn);
 }
@@ -91,6 +102,83 @@
     z-index: -1;
 }
 
-.Sale_img  {
+.Sale_img {
     transform: skew(-10deg);
+}
+
+
+
+@media (min-width:1024px) {
+    .Sale_img {
+        width: 35%;
+    }
+}
+
+@media (max-width:1023px) {
+    .col-6 {
+        width: 40%;
+    }
+
+    .Sale_left h2 {
+        font-size: 40px;
+    }
+
+    .Sale_left h3 {
+        font-size: 22px;
+    }
+
+    .Sale_price {
+        width: 65%;
+    }
+
+    .Sale_button button {
+        width: 70%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .Sale_img {
+        width: 35%;
+    }
+
+    .col-8,
+    .col-6 {
+        width: 100%;
+    }
+
+    .Sale {
+        text-align: center;
+    }
+    .Sale_price {
+       margin: 0 auto;
+       width: 50%;
+    }
+    .Sale_button button {
+        margin-right: 0;
+        width: 51%;
+    }
+    .Sale_wrap {
+        height: 1200px;
+    }
+    .Sale_img {
+        width: 100%;
+        transform: unset;
+    }
+}
+
+@media (max-width:390px) {
+    .Sale_img {
+        width: 35%;
+    }
+    .Sale_price {
+        width: 70%;
+    }
+    .Sale_button button {
+        width: 60%;
+    }
+    .Sale_img {
+        width: 100%;
+        transform: unset;
+    }
 }

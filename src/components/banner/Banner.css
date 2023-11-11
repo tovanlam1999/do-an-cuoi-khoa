@@ -1,4 +1,3 @@
-
 .baner {
     margin: 20px auto 30px;
     cursor: pointer;
@@ -22,6 +21,7 @@
     position: relative;
 
 }
+
 .banner-2::after,
 .banner-3::after,
 .banner-1::after {
@@ -34,6 +34,7 @@
     background-image: url(../../img/animation-img.jpg);
     animation: moveright 300s linear infinite;
 }
+
 .banner-2::before,
 .banner-3::before,
 .banner-1::before {
@@ -48,6 +49,7 @@
     animation: moveleft 300s linear infinite;
 
 }
+
 .banner-2 {
     display: none;
 }
@@ -196,11 +198,43 @@
     z-index: -1;
 }
 
-@media (max-width:1024px) {
+.swiper {
+    position: absolute;
+    width: 10%;
+    height: 20px;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.swiper span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.swiper span:nth-child(1) {
+    background-color: var(--color-primery);
+}
+.swiper span:nth-child(2) {
+    background-color: var(--color-btn);
+}
+.swiper span:nth-child(3) {
+    background-color: var(--color-btn);
     
 }
 
 @media (min-width:1024px) {
+    .modal.show .modal-dialog {
+        height: 100%;
+    }
+}
+
+@media (max-width:1024px) {
     .thumb-banner {
         width: 35%;
         left: 35%;
@@ -217,27 +251,95 @@
     .thumb-banner button {
         width: 40%;
     }
+     .modal.show .modal-dialog {
+        height: 100%;
+    }
+    
+}
+
+@media (max-width:767px) {
+    .swiper {
+        display: flex;
+    }
+    .modal.show .modal-dialog {
+        height: 50%;
+    }
+    .modal-dialog {
+        max-width: none;
+    }
+    .prev {
+        display: none;
+    }
+
+    .thumb-banner {
+        width: 50%;
+    }
+
+    .thumb-banner h3 {
+        font-size: 14px;
+    }
+
+    .thumb-banner h1 {
+        font-size: 30px;
+    }
+
+    .thumb-banner button {
+        width: 25%;
+        font-size: 12px;
+    }
+
+    .banner-2::before,
+    .banner-3::before,
+    .banner-1::before {
+        top: -10px;
+        height: 50px;
+    }
+
+    .banner-2::after,
+    .banner-3::after,
+    .banner-1::after {
+        bottom: -16px;
+        height: 55px;
+    }
+}
+
+@media (max-width:390px) {
+    .banner-2,
+    .banner-3,
+    .banner-1{
+        height: 400px;
+    }
+    .thumb-banner h3 {
+        font-size: 10px;
+    }
+    .thumb-banner h1 {
+        font-size: 24px;
+    }
+    .thumb-banner button {
+        width: 50%;
+    }
 }
 
 @keyframes moveleft {
     from {
-      background-position: 0 0;
+        background-position: 0 0;
     }
 
     to {
-       background-position:  -30000px 0;
+        background-position: -30000px 0;
 
 
     }
 }
+
 @keyframes moveright {
     from {
         background-position: 0 0;
-      }
-  
-      to {
-        background-position:  30000px 0;
-  
-  
-      }
+    }
+
+    to {
+        background-position: 30000px 0;
+
+
+    }
 }

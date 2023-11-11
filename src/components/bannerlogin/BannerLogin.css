@@ -97,6 +97,14 @@
 }
 
 
-@keyframes top {
+@media (max-width:1023px) {
+    .BannerLogin_img {
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    
+}
+@media (max-width:390px) {
     
 }

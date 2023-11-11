@@ -32,7 +32,7 @@ export default function NewProduct(props) {
                 <span className="border-bottom"></span>
                 <span className="border-left"></span>
             </div>
-            <div className="NewProduct_bottom">
+            <div className="NewProduct_bottom container">
                 <div className="prev-green">
                     <div className="prev-left">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -50,6 +50,11 @@ export default function NewProduct(props) {
                         ))}
                     </Row>
                 </Container>
+                <div className='swiper'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     );

@@ -174,3 +174,36 @@ h2 {
         transform: translateY(-100%);
     }
 }
+
+
+
+@media (max-width:1023px) {
+    .NewProduct > .border-animation {
+        width: 50%;
+    }
+    .NewProduct > .border-animation h2 {
+        font-size: 40px;
+    }
+}
+@media (max-width:767px) {
+    .NewProduct_bottom .prev-green {
+        display: none;
+    }
+    .NewProduct_bottom  .swiper {
+        position: unset;
+        margin: 20px auto 0;
+        transform: unset;
+    }
+    .NewProduct_bottom  .swiper span {
+        margin-right: 10px;
+    }
+    
+}
+@media (max-width:390px) {
+    .NewProduct > .border-animation {
+        width: 75%;
+    }
+    .NewProduct > .border-animation h2 {
+        font-size: 30px;
+    }
+}

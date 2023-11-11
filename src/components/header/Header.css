@@ -19,8 +19,6 @@ ul {
 }
 
 .header {
-    width: 90%;
-    margin: 0 auto;
     font-family: var(--font-serif);
 }
 
@@ -299,7 +297,7 @@ ul {
 }
 
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
     .header_logo  {
         width: 25%;
     }
@@ -326,7 +324,7 @@ ul {
         display: block;
     }
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .sreach,
     .shopping,
     .withlove,
@@ -346,5 +344,10 @@ ul {
     .header_right-text {
         font-size: 18px;
         font-weight: 600;
+    }
+}
+@media (max-width:390px) {
+    .header_right-text {
+        display: none;
     }
 }

@@ -33,21 +33,21 @@ export default function AllProDuct(props) {
                 </div>
             </div>
             <div className="AllProDuct_hedding">
-                <div className="AllProDuct_border-animation active">
+                <div className="AllProDuct_border-animation col-4 active">
                     <h2 className='active'>Sản Phẩm Mới</h2>
                     <span className="AllProDuct_border-top active"></span>
                     <span className="AllProDuct_border-right active"></span>
                     <span className="AllProDuct_border-bottom active"></span>
                     <span className="AllProDuct_border-left active" ></span>
                 </div>
-                <div className="AllProDuct_border-animation">
+                <div className="AllProDuct_border-animation col-4">
                     <h2>Bán Chạy Nhất</h2>
                     <span className="AllProDuct_border-top"></span>
                     <span className="AllProDuct_border-right"></span>
                     <span className="AllProDuct_border-bottom"></span>
                     <span className="AllProDuct_border-left"></span>
                 </div>
-                <div className="AllProDuct_border-animation ">
+                <div className="AllProDuct_border-animation col-4 ">
                     <h2>Sản Phẩm Top </h2>
                     <span className="AllProDuct_border-top"></span>
                     <span className="AllProDuct_border-right"></span>
@@ -65,6 +65,11 @@ export default function AllProDuct(props) {
                         ))}
                     </Row>
                 </Container>
+                <div className='swiper'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     );

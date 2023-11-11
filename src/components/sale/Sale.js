@@ -4,7 +4,7 @@ import { Row, Col, Container } from 'reactstrap';
 
 export default function Sale() {
     return (
-        <div className="Sale_wrap">
+        <div className="Sale_wrap container">
             <Row className="Sale">
                 <Col className=" col-6 Sale_left">
                     <h2>Ưu đãi hôm nay</h2>

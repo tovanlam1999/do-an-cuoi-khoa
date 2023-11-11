@@ -11,7 +11,7 @@ export default function Header(args) {
 
     return (
         <div className="main">
-            <div className="header">
+            <div className="header container">
                 <Navbar className="header_navbar">
                     <NavbarBrand className="header_logo" href="/">
                         {' '}

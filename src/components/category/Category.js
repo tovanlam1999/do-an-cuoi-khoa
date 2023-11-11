@@ -7,18 +7,18 @@ import './Category.css';
 
 export default function Category() {
     return (
-        <div className="Category">
+        <div className="Category container">
             <div className="Category_wrap">
                 <div className="border-animation active">
-                    <h2>Danh Mục Thú Cưng </h2>
+                    <h2 className='Category_h2'>Danh Mục Thú Cưng </h2>
                     <span className="border-top"></span>
                     <span className="border-right"></span>
                     <span className="border-bottom"></span>
                     <span className="border-left"></span>
                 </div>
-
+                <Container>
                 <Row className='Category_row' >
-                    <Col className="Category_item">
+                    <Col className="Category_item col-4">
                         <img src={Categorydog} />
                         <div className="Category_content">
                             <h3>Chó Đốm</h3>
@@ -29,7 +29,7 @@ export default function Category() {
                             <button className="Category_button .thumb-banner button">Mua Ngay</button>
                         </div>
                     </Col>
-                    <Col className="Category_item ">
+                    <Col className="Category_item col-4">
                         <img src={Categorycat} />
                         <div className="Category_content">
                             <h3>Angora Thổ Nhĩ Kỳ</h3>
@@ -40,7 +40,7 @@ export default function Category() {
                             <button className="Category_button .thumb-banner button">Mua Ngay</button>
                         </div>
                     </Col>
-                    <Col className="Category_item ">
+                    <Col className="Category_item col-4 ">
                         <img src={Categoryvet} />
                         <div className="Category_content">
                             <h3>Vẹt Hồng</h3>
@@ -52,6 +52,8 @@ export default function Category() {
                         </div>
                     </Col>
                 </Row>
+
+                </Container>
             </div>
         </div>
     );
