@@ -3,16 +3,17 @@
     margin: 50px 0;
 }
 
-.OurUpDation_left {
+.OurUpDation_left {}
 
-}
 .OurUpDation_row {
     gap: 40px;
 }
+
 .thumb {
-    position: relative; 
+    position: relative;
     height: 250px;
 }
+
 .OurUpDation_img-bottom:hover::after,
 .OurUpDation_img-right:hover::after,
 .OurUpDation_left:hover .thumb::after {
@@ -20,11 +21,13 @@
     visibility: visible;
 
 }
+
 .OurUpDation_img-bottom:hover .thumb_date,
 .OurUpDation_img-right:hover .thumb_date,
 .thumb:hover .thumb_date {
     background-color: var(--color-primery);
 }
+
 .OurUpDation_img-bottom::after,
 .OurUpDation_img-right::after,
 .thumb::after {
@@ -41,7 +44,7 @@
     border-bottom-right-radius: 100px;
 }
 
-.thumb > a {
+.thumb>a {
     background-image: url(../../img/ourdation.jpg);
     border-bottom-right-radius: 100px;
     transform: scale(1);
@@ -73,8 +76,9 @@
 
 
 .OurUpDation_entry-tags {
-    margin: 30px 0 ;    
+    margin: 30px 0;
 }
+
 .OurUpDation_entry-tags a {
     margin-left: 10px;
     font-size: 16px;
@@ -83,13 +87,16 @@
     transition: 0.5s;
     color: #000;
 }
+
 .OurUpDation_entry-tags a:hover {
     color: var(--color-btn) !important;
 }
+
 .OurUpDation_entry-tags p {
     font-size: 18px;
     margin: 25px 0;
 }
+
 .OurUpDation_content-right {
     padding: 0;
 }
@@ -103,15 +110,18 @@
     cursor: pointer;
     font-family: var(--font-family);
 }
+
 .OurUpDation_content-right h4 {
     line-height: 45px;
     width: 70%
 }
+
 .OurUpDation_content-right h4:hover,
 .OurUpDation_content-bottom h4:hover,
 .OurUpDation_left h4:hover {
     color: var(--color-btn);
 }
+
 .OurUpDation_right button,
 .OurUpDation_left button {
     background-color: var(--color-btn);
@@ -124,22 +134,26 @@
     border-radius: 30px;
     transition: 0.5s;
 }
+
 .OurUpDation_right button:hover,
 .OurUpDation_left button:hover {
     background-color: var(--color-primery);
 }
+
 .OurUpDation_right button {
     width: 60%;
 }
+
 .OurUpDation_right {
-    display: flex;
-    position: relative;
+    
 }
+
 .OurUpDation_img-right,
 .OurUpDation_img-bottom {
     position: relative;
-    padding:0px;
+    padding: 0px;
 }
+
 .OurUpDation_img-right a,
 .OurUpDation_img-bottom a {
     display: block;
@@ -149,10 +163,11 @@
     background-repeat: round;
     border-bottom-right-radius: 100px;
 }
+
 .OurUpDation_img-bottom a {
     background-image: url(../../img/ourdation-2.jpg)
-    
 }
+
 .OurUpDation_img-right a {
     background-image: url(../../img/ourdation-1.jpg);
 
@@ -164,14 +179,81 @@
     top: 10%;
     width: 30%;
     transform: translate(-50%);
-    animation: movecat 20s  infinite alternate linear ;
+    animation: movecat 20s infinite alternate linear;
+}
+
+.OurUpDation .border-animation {
+    margin: 50px auto;
+    width: 35%;
+}
+
+.OurUpDation_h2 {
+    text-align: center;
 }
 
 @keyframes movecat {
     from {
         right: -25%;
     }
+
     to {
         right: -40%;
+    }
+}
+
+@media (max-width:1023px) {
+    .OurUpDation_col-7,
+    .OurUpDation_col-5 {
+        width: 100%;
+        
+    }
+    
+    .OurUpDation_img-right {
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .OurUpDation_img-bottom,
+    .OurUpDation_img-right {
+        width: 100%;
+        height:300px;
+    }
+    .OurUpDation_content-bottom ,
+    .OurUpDation_content-right {
+        width: 100%;
+        text-align: center;
+    }
+    .OurUpDation_content-right h4 {
+        width: 100%;
+    }
+    .OurUpDation .border-animation {
+        width: 70%;
+    }
+    .OurUpDation_row {
+        gap: 20px;
+    }
+    .OurUpDation_entry-tags {
+        margin: 30px 0 10px;
+    }
+    .OurUpDation_right {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:390px) {
+    .OurUpDation .border-animation {
+        width: 75%;
+    }
+
+    .OurUpDation_h2 {
+        font-size: 30px;
+    }
+
+    .OurUpDation_col-5 {
+        width: 100%;
+    }
+    .OurUpDation_row {
+        padding: 0 10px;
     }
 }

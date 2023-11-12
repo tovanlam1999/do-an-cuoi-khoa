@@ -257,7 +257,7 @@
     
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .swiper {
         display: flex;
     }
@@ -318,6 +318,11 @@
     .thumb-banner button {
         width: 50%;
     }
+    .swiper {
+
+        width: 20%;
+        bottom: 10%;
+}
 }
 
 @keyframes moveleft {

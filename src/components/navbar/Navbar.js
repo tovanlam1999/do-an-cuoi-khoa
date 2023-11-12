@@ -1,6 +1,6 @@
 import { Container } from 'reactstrap';
 import './Navbar.css';
-
+import {Link} from "react-router-dom"
 export default function Navbar() {
     return (
         <div className="wrap">
@@ -16,7 +16,7 @@ export default function Navbar() {
                 </div> */}
                 <ul className="navbar_list">
                     <li>
-                        <a>Trang Chủ</a>
+                        <Link to={`/`}>Trang Chủ</Link>
                     </li>
                     <li>
                         <a>Khuyến mãi</a>

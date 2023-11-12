@@ -3,12 +3,14 @@ import axios from 'axios';
 import Product from '../product/Product';
 import { Row, Col, Container } from 'reactstrap';
 import './NewProduct.css';
+import { useParams } from 'react-router-dom';
 
 export default function NewProduct(props) {
     const [data, setData] = useState([]);
-
+    const {id} = useParams();
     const getData = () => {
-        const api = 'https://653e66669e8bd3be29df402b.mockapi.io/dog-cat-food';
+
+        const api = `https://653e66669e8bd3be29df402b.mockapi.io/dog-cat-food/${id}`;
         axios
             .get(api)
             .then((res) => {

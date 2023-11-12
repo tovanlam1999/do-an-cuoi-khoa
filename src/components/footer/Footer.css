@@ -103,7 +103,7 @@ h3,h2 {
     color: var(--color-primery);
 }
 
-@media (max-width:991px) {
+@media (max-width:1023px) {
     .Content {
         position: unset;
         transform: none;
@@ -119,5 +119,14 @@ h3,h2 {
     }
     .footer {
         height: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .footer_row  {
+        flex-direction: column;
+    }
+    .Content_item  {
+        width: 100%;
     }
 }

@@ -2,6 +2,10 @@
     margin-top: 50px;
 }
 
+.Exchange_wrap {
+    display: flex;
+    justify-content: space-between;
+}
 .Exchange_item {
     display: flex;
     align-items: center;
@@ -15,8 +19,8 @@
 
 .Exchange_img {
     background-color: #ecd0d5;
-    width: 80px;
-    height: 80px;
+    width: 80px !important;
+    height: 80px !important;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -56,4 +60,27 @@
 .Exchange_text p {
     font-weight: 600;
     margin-top: 10px;
+}
+
+
+@media (max-width:1023px) {
+
+}
+
+@media (max-width:768px) {
+    .Exchange_item {
+        width: 100%;
+    }
+    .Exchange_row  {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:390px) {
+    .Exchange_text p {
+        font-size: 12px;
+    }
+    .Exchange_text h4 {
+        font-size: 20px;
+    }
 }

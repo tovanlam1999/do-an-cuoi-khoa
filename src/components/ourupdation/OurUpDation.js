@@ -5,10 +5,16 @@ import img from '../../img/ourdation-cat-2.jpg';
 export default function OurUpDation() {
     return (
         <div className="OurUpDation">
-            <h2>Cập Nhập Gần Đây</h2>
+             <div className="border-animation active">
+                    <h2 className='OurUpDation_h2'>Cập Nhập Gần Đây </h2>
+                    <span className="border-top"></span>
+                    <span className="border-right"></span>
+                    <span className="border-bottom"></span>
+                    <span className="border-left"></span>
+                </div>
             <Container>
                 <Row>
-                    <Col className="col-5">
+                    <Col className="OurUpDation_col-5 col-5">
                         <div className="OurUpDation_left">
                             <div className="thumb">
                                 <a></a>
@@ -35,7 +41,7 @@ export default function OurUpDation() {
                             <button>ĐỌC THÊM</button>
                         </div>
                     </Col>
-                    <Col className="col-7">
+                    <Col className="OurUpDation_col-7 col-7">
                         <div className="OurUpDation_right">
                             <Row className="OurUpDation_row">
                                 <Col className="OurUpDation_img-right col-6">
@@ -77,7 +83,7 @@ export default function OurUpDation() {
                                         <a>TOYS</a>
                                     </div>
                                     <h4>
-                                        <a>Mẹo giúp mèo luôn mát mẻ và khỏe mạnh</a>
+                                        <a>Tiêu chuẩn và hướng dẫn tiêm phòng cho mèo</a>
                                     </h4>
                                     <p>
                                         Trên thực tế, tài xế xe tải hiện đang làm điều đó. Phần lớn dân số đang sống

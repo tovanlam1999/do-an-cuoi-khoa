@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <div className="Content">
-                <Row>
+                <Row className="footer_row">
                     <Col className="Content_item add-width">
                         <h3>Liên hệ chúng tôi</h3>
                         <ul>
@@ -101,7 +101,7 @@ export default function Footer() {
                         <h3>Giúp đỡ</h3>
                         <ul>
                             <li>
-                                <a>ìm kiếm nâng cao</a>
+                                <a>Tìm kiếm nâng cao</a>
                             </li>
                             <li>
 

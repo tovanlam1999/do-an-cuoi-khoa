@@ -186,7 +186,7 @@ h2 {
         font-size: 40px;
     }
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
     .NewProduct_bottom .prev-green {
         display: none;
     }

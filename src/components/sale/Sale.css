@@ -115,7 +115,7 @@
 }
 
 @media (max-width:1023px) {
-    .col-6 {
+    .Sale_left {
         width: 40%;
     }
 
@@ -137,13 +137,13 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .Sale_img {
         width: 35%;
     }
 
-    .col-8,
-    .col-6 {
+    .Sale_img,
+    .Sale_left {
         width: 100%;
     }
 
