@@ -103,8 +103,24 @@
     }
 }
 @media (max-width:767px) {
-    
+    .BannerLogin_content  {
+        right: 50%;
+        transform: translateX(50%);
+        width: 70%;
+    }
 }
 @media (max-width:390px) {
-    
+    .BannerLogin_content button {
+        width: 60%;
+    }
+    .BannerLogin_wrap {
+        height: 900px;
+    }
+    .BannerLogin_app {
+        flex-direction: column;
+    }
+    .BannerLogin_app a {
+       width: 70%;
+       margin: 20px auto 0;
+    }
 }

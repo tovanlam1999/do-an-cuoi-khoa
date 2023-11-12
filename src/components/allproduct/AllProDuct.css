@@ -28,7 +28,7 @@
     margin-top: 50px;
 }
 
-.prev-green {
+.AllProDuct .prev-green {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,9 +37,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
-.prev-green div {
+.AllProDuct .prev-green div {
     width: 40px;
     height: 40px;
     background-color: #fff;
@@ -53,17 +54,17 @@
     overflow: hidden;
 }
 
-.prev-green div:hover::after {
+.AllProDuct .prev-green div:hover::after {
     height: 250%;
 
 }
 
-.prev-green div:hover i {
+.AllProDuct .prev-green div:hover i {
     color: #fff;
     z-index: 3;
 }
 
-.prev-green div i {
+.AllProDuct .prev-green div i {
     transition: 0.5s;
 }
 

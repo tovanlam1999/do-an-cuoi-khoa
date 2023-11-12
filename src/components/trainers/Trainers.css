@@ -167,3 +167,22 @@
         transform:scale(1) translateX(-70%);
     }
 }
+
+@media (max-width:1023px) {
+
+}
+@media (max-width:767px) {
+    .Trainers_left  {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .Trainers_right  {
+        margin-top: 30px;
+    }
+    
+}
+@media (max-width:390px) {
+    .Trainers_left div:nth-child(3) {
+        width: 80%;
+    }
+}

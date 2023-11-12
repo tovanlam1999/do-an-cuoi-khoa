@@ -87,9 +87,9 @@ export default function OurUpDation() {
                                     
                                 </Col>
                             </Row>
-                            <div className="OurUpDation_sub-img-cat">
+                            {/* <div className="OurUpDation_sub-img-cat">
                                 <img src={img}/>
-                            </div>
+                            </div> */}
                         </div>
                     </Col>
                 </Row>

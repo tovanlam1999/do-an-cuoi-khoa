@@ -24,7 +24,7 @@ export default function Home () {
             <Navbar/>
             <Banner/>
             <Category/>
-            {/* <NewProduct/>
+            <NewProduct/>
             <Sale/>
             <AllProDuct/>
             <BannerLogin/>
@@ -33,7 +33,7 @@ export default function Home () {
             <OurUpDation/>
             <PuppyFood/>
             <Exchange/>
-            <Footer/> */}
+            <Footer/>
         </div>
     )
 }
