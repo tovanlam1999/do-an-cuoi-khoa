@@ -36,6 +36,7 @@ h2 {
 .NewProduct_row {
     flex-wrap: unset;
     overflow: hidden;
+    text-align:center;
 }
 
 .prev-green {

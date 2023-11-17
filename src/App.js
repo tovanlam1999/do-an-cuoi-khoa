@@ -1,6 +1,8 @@
 import Home from "./pages/Home/Home";
-import Detail from "./pages/detail/Detail";
+
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import ProductDetail from "./pages/productdetail/ProductDetail";
+import ListDetail from "./pages/Listdetail/ListDetail";
 
 export default function App() {
   return (
@@ -9,7 +11,8 @@ export default function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="petshops/:type" element={<Home />} />
-          <Route path="petshop/:id" element={<Detail />} />
+          <Route path="petshop/san-pham" element={<ListDetail/>} />
+          <Route path="petshop/san-pham/:id" element={<ProductDetail/>} />
           <Route path="/*" element={<h1>Error Page</h1>} />
 
         </Routes>

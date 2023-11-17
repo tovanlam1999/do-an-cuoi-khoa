@@ -10,7 +10,7 @@ export default function NewProduct(props) {
     const {id} = useParams();
     const getData = () => {
 
-        const api = `https://653e66669e8bd3be29df402b.mockapi.io/dog-cat-food/${id}`;
+        const api = `https://653e66669e8bd3be29df402b.mockapi.io/dog-cat-food/`;
         axios
             .get(api)
             .then((res) => {
@@ -34,7 +34,7 @@ export default function NewProduct(props) {
                 <span className="border-bottom"></span>
                 <span className="border-left"></span>
             </div>
-            <div className="NewProduct_bottom container">
+            <div className="NewProduct_bottom">
                 <div className="prev-green">
                     <div className="prev-left">
                         <i class="fa-solid fa-chevron-left"></i>

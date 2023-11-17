@@ -10,7 +10,7 @@ export default function Footer() {
     const [value, setValue] = useState("")
     return (
         <div className="footer">
-            <div className="Content">
+            <div className="Content container">
                 <Row className="footer_row">
                     <Col className="Content_item add-width">
                         <h3>Liên hệ chúng tôi</h3>

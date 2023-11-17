@@ -2,11 +2,11 @@
 import "./Product.css"
 import {Link} from "react-router-dom"
 export default function Product(props) {
-    const { index, product } = props;
+    const { product } = props;
 
     return (
         <div className="Products">
-            <Link to={`/petshop/${product.id}`} className="thumb">
+            <Link to={`/petshop/san-pham/${product.title}`} className="thumb">
                 <img src={`${product ? product.img : ''}`} />
                 <div className="sub-thumb">
                     <img src={`${product ? product.subimg : ''}`} />

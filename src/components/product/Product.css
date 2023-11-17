@@ -5,6 +5,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-top: 10px;
+    transition: 0.5s;
 }
 .Products_content h3:hover {
     color: var(--color-primery);
@@ -37,13 +38,9 @@
 .Products .whitlist {
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     bottom: -15px;
-    width: 120%;
-    left: 0;
+    transform: translate(25%);
     opacity: 0;
-    transform: translateX(-50%);
     transition: 0.5s;
     gap: 5px;
 }
